@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --btn-color:#e58f00;
+    --about-sec:#1d1d23;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* design for home section */
+
+.petfoods{
+    padding: 1rem 10%;
+    background: url(img/background.jpg);
+    min-height: 70vh;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-petfoods{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1px;
+    padding-top: 50px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.petfoods-inner-content{
+    flex: 1 1 45rem;
+}
+.petfoods-image{
+    width:33%;
+    height: 50%;
+    position: absolute;
+    
+}
+.petfoods-image img{
+    
+    width: 100%;
+    position: relative;
+    transform: translate(0%, -40%);
+    animation: mymove 5s infinite ease-in-out;
+}
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%   {top: 15px;}
+    75%   {top: 10px;}
+    100%   {top: 0px;}
+  }
+.petfoods-text-content{
+    padding: 0 8rem;
+}
+.petfoods-text-content h1{
+    font-size: 45px;
+    color: #e58f00;
+}
+.petfoods-text-content p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.petfoods-text-content a{
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid orange;
+    border-radius: 10px;
+    font-size: 18px;
+   transition: 0.5s;
+   display: inline-block;
+}
+.petfoods-text-content a:hover{
+    transform: scale(1.1);
+    background: var(--btn-color);
+    border: 1px solid white;
+}
+
+/* Product Card Styles */
+#product-card {
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    gap: 50px;
+  }
+  
+  .product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .product-card-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .product-title {
+    font-size: 1.6rem;
+    color: var(--btn-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+
+  
+  .product-footer {
+    margin-top: 1rem;
+  }
+  
+
+  .view-product-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--btn-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+  }
+  
+  .view-product-btn:hover {
+    background: #cc7a00;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+    .header{
+        padding: 3rem;
+    }
+    .icons div{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: var(--btn-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    /* home css desing */
+
+    .home-text-content{
+        padding: 0 2rem;
+    }
+    .main-home{
+        padding: 2rem 0;
+    }
+    .home{
+        padding-top: 100px;
+        
+    }
+    .home-image img{
+        transform: translate(0%, 0%);
+    }
+    .home-text-content{
+        margin-top: 300px;
+    }
+    .about-content .about-inner-content img{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .quality-content{
+        padding: 1rem 2rem;
+    }
+    .quality-content h1{
+        color: var(--about-sec)
+    }
+    .food-main-content{
+        width: 100%;
+        border: 4px solid white;
+        padding: 1rem;
+    }
+
+    .footer-navbar a{
+        display: block;
+       
+    }
+
+}
+
+
+
+
+
+
+
+
+
